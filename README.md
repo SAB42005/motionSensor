@@ -1,5 +1,3 @@
-#motionSensor
-
 DESCRIPTION	
 -----------
 -The purpose of this script is to detect motion using the devices webcam and send a screenshot along with the time to the users email.
