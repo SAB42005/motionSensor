@@ -20,6 +20,8 @@ USAGE
 
 NOTES
 -----
+-Version is intended for windows machines
+
 -Stable internet connection is required to function properly
 
 -Currently unavailable in order to improve security regarding the sending email address
