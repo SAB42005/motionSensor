@@ -1,0 +1,13 @@
+Run installers.py to download required packages
+
+Add each receiving email address to a new line in receivers.txt
+
+Add the time(the time is in seconds) to the first line in delay.txt
+Default is 15
+ONLY INCLUDE THE NUMBER, NO UNITS
+
+Run motionSensorInit.bat to start
+
+To stop the script select the Video Feed window and press 'q'
+
+Create a shortcut for motionSensorInit.bat for easy access
