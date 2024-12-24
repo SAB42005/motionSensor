@@ -1,0 +1,10 @@
+
+
+
+Error occured on 2024-12-22 20:34:27.318244:
+Traceback (most recent call last):
+  File "C:\Users\burns\OneDrive\scripts\motionSensorV1.1.0\sendEmail.py", line 33, in <module>
+    receivers+=1
+TypeError: 'int' object is not iterable
+
+

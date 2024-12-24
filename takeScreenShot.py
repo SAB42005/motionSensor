@@ -30,4 +30,4 @@ try:
     sS.save(r'screenShot\screenShot.png')
 except:
     with open(error, 'a') as file:
-        file.write(f'Error occured on {datetime.datetime.now()}:\n{traceback.format_exc()}\n\n')
+        file.write(f'Error occured on {datetime.datetime.now()}:\n{traceback.format_exc()}\n')

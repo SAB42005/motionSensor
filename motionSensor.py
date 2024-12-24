@@ -4,10 +4,13 @@ try:
     import cv2, ctypes, sys, time, subprocess as s, pyfiglet as pF
 
     if __name__=='__main__':
+        name=os.path.basename(__file__)
         banner=pF.figlet_format('Initializing...', font='slant')
         print(banner)
-        
-        sendAlert=os.path.abspath('alert.py')
+        if name.endswith('.py'):
+            sendAlert=os.path.abspath('alert.py')
+        else:
+            sendAlert=os.path.abspath('alert.exe')
         timer=os.path.abspath(r'checks\timer.txt')   
 
         with open(timer, 'w') as file:
@@ -64,5 +67,5 @@ try:
             cv2.destroyAllWindows()
 except:
     with open(error, 'a') as file:
-        file.write(f'Error occured on {datetime.datetime.now()}:\n{traceback.format_exc()}\n\n')
+        file.write(f'Error occured on {datetime.datetime.now()}:\n{traceback.format_exc()}\n')
 

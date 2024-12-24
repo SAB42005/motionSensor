@@ -3,7 +3,7 @@ error=os.path.abspath(r'checks\errorLogs.txt')
 try:
     s.call([sys.executable, '--version'])
 except:
-    print(r'Install python on your system: https://www.python.org/downloads/')
+    print(r'Install python3 on your system: https://www.python.org/downloads/')
     input()
 try:
     s.call([sys.executable, '-m', 'pip', 'install', '--upgrade', 'pip'])
@@ -16,5 +16,5 @@ try:
     s.call([sys.executable, '-m', 'pip', 'install', '--upgrade', 'pillow'])
 except:
     with open(error, 'a') as file:
-        file.write(f'Error occured on {datetime.datetime.now()}:\n{traceback.format_exc()}\n\n')
+        file.write(f'Error occured on {datetime.datetime.now()}:\n{traceback.format_exc()}\n')
     

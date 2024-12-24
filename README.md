@@ -6,7 +6,7 @@ DESCRIPTION
 
 USAGE
 -----
--Make sure python is updated to the latest version and installers.py has been ran
+-Make sure python is updated to the latest version and installers.py has been ran or run the compiled version
 
 -Add each receiving email address to a new line in receivers.txt
 
@@ -20,6 +20,8 @@ USAGE
 
 NOTES
 -----
+-Version is intended for windows machines
+
 -Stable internet connection is required to function properly
 
--Currently unavailable in order to improve security regarding the sending email address
+-Currently unavailable in order to improve security regarding the sending through email address, use the compiled version

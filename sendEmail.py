@@ -9,7 +9,7 @@ try:
     image=os.path.abspath(r'screenShot\screenShot.png')
     emails=os.path.abspath('receivers.txt') 
     port=465
-    password='pvlz jqlw qvea yvkc'
+    password=''
     sender='motionSensor798@gmail.com'
     receivers=[]
     context=ssl.create_default_context()
@@ -38,4 +38,4 @@ Motion Detected at {datetime.datetime.now().strftime('%H:%M:%S')}.
             server.sendmail(sender, receivers[i], msg.as_string())
 except:
     with open(error, 'a') as file:
-        file.write(f'Error occured on {datetime.datetime.now()}:\n{traceback.format_exc()}\n\n')
+        file.write(f'Error occured on {datetime.datetime.now()}:\n{traceback.format_exc()}\n')
