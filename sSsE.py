@@ -32,7 +32,16 @@ def takeSS(capWindow):
         height=window.height
 
         sS=pyautogui.screenshot(region=(left, top, width, height))
-        sS.save(r'screenShot\screenShot.png')
+        
+        try:
+            sS.save(r'screenShot\screenShot.png')
+        except:
+            folder=os.path.abspath(sys.argv[0])
+            if folder.endswith('.py'):
+                folder=folder.rstrip('sSsE.py')
+            else:
+                folder=folder.rstrip('sSsE.exe')
+            s.run(['mkdir', folder], shell=True)
 
         sendEmail()
     except:
