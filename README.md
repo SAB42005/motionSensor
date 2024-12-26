@@ -10,17 +10,15 @@ USAGE
 
 -Add each receiving email address to a new line in receivers.txt
 
--Add the time(in seconds) to the first line in delay.txt
--Only include numbers, no units
--Default is 15
+-Add the time(in seconds) to the first line in delay.txt, only include numbers, no units, default is 15
 
 -Run motionSensor.py to start
 
--To stop the script either select the Video Feed window and press 'q' or close motionSensor.py
+-To stop the script either select the Video Feed window and press 'q' or close the motionSensor window
 
 NOTES
 -----
--Version is intended for windows machines
+-Version is intended for windows 10/11 machines
 
 -Stable internet connection is required to function properly
 
