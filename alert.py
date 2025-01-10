@@ -1,28 +1,27 @@
 import traceback, datetime, os, sys
-error=os.path.abspath(r'checks\errorLogs.txt')
 
-def sendAlert():
-    try:
-        import time, subprocess as s, sSsE as SE
+def sendAlert(window):
+    import time, subprocess as s, sSsE as SE
+    name=os.path.basename(sys.argv[0])
+    if name.endswith('.py'):
+        timer=os.path.abspath('timer.py')
+    else:
+        timer=os.path.abspath('timer.exe')
+    check=os.path.abspath(r'checks\timer.txt')
+    sS=os.path.abspath(r'screenShot\screenShot.png')
+    image=os.path.abspath(r'screenShot\screenShot.png')
+    message=f'''\
+Motion Detected at {datetime.datetime.now().strftime('%H:%M:%S')}.
 
-        name=os.path.basename(sys.argv[0])
-        if name.endswith('.py'):
-            timer=os.path.abspath('timer.py')
-        else:
-            timer=os.path.abspath('timer.exe')
-        check=os.path.abspath(r'checks\timer.txt')
-        with open(check, 'r') as file:
-            status=file.read()
+<do not respond to this email>'''
+    with open(check, 'r') as file:
+        status=file.read()
 
-        if status=='go':
-            SE.takeSS('Video Feed')
-            s.run(['start', timer], shell=True)
-            with open(check, 'w') as file:
-                file.write('stop')
-               
-    except:
-        with open(error, 'a') as file:
-            file.write(f'Error occured on {datetime.datetime.now()}:\n{traceback.format_exc()}\n')
+    if status=='go':
+        SE.takeSS(window, sS)
+        SE.sendEmail(message, image)
+        s.run(['start', timer], shell=True)
+        with open(check, 'w') as file:
+            file.write('stop')
 
-sendAlert()
-
+#sendAlert('motionSensor')

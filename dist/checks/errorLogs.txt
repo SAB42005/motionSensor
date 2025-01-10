@@ -1,0 +1,60 @@
+
+An error occured in timer on 2025-01-10 18:08:52.167558:
+Traceback (most recent call last):
+  File "timer.py", line 46, in <module>
+  File "pyfiglet\__init__.py", line 67, in figlet_format
+  File "pyfiglet\__init__.py", line 862, in __init__
+  File "pyfiglet\__init__.py", line 869, in setFont
+  File "pyfiglet\__init__.py", line 128, in __init__
+  File "pyfiglet\__init__.py", line 141, in preloadFont
+  File "importlib\resources\_common.py", line 46, in wrapper
+  File "importlib\resources\_common.py", line 56, in files
+  File "functools.py", line 907, in wrapper
+  File "importlib\resources\_common.py", line 82, in _
+  File "importlib\__init__.py", line 90, in import_module
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'pyfiglet.fonts'
+
+An error occured in timer on 2025-01-10 18:09:00.241738:
+Traceback (most recent call last):
+  File "timer.py", line 46, in <module>
+  File "pyfiglet\__init__.py", line 67, in figlet_format
+  File "pyfiglet\__init__.py", line 862, in __init__
+  File "pyfiglet\__init__.py", line 869, in setFont
+  File "pyfiglet\__init__.py", line 128, in __init__
+  File "pyfiglet\__init__.py", line 141, in preloadFont
+  File "importlib\resources\_common.py", line 46, in wrapper
+  File "importlib\resources\_common.py", line 56, in files
+  File "functools.py", line 907, in wrapper
+  File "importlib\resources\_common.py", line 82, in _
+  File "importlib\__init__.py", line 90, in import_module
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'pyfiglet.fonts'
+
+An error occured in timer on 2025-01-10 18:09:06.375730:
+Traceback (most recent call last):
+  File "timer.py", line 46, in <module>
+  File "pyfiglet\__init__.py", line 67, in figlet_format
+  File "pyfiglet\__init__.py", line 862, in __init__
+  File "pyfiglet\__init__.py", line 869, in setFont
+  File "pyfiglet\__init__.py", line 128, in __init__
+  File "pyfiglet\__init__.py", line 141, in preloadFont
+  File "importlib\resources\_common.py", line 46, in wrapper
+  File "importlib\resources\_common.py", line 56, in files
+  File "functools.py", line 907, in wrapper
+  File "importlib\resources\_common.py", line 82, in _
+  File "importlib\__init__.py", line 90, in import_module
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'pyfiglet.fonts'
+
+An error occured in timer on 2025-01-10 18:09:12.509642:
+Traceback (most recent call last):
+  File "timer.py", line 9, in <module>
+IndexError: list index out of range
+
