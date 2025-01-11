@@ -19,8 +19,13 @@ def takeSS(capWindow, path):
             return True
         win32gui.EnumWindows(windowEnumHandler, None)
 
-    win32gui.ShowWindow(hwnd, win32con.SW_RESTORE)
-    win32gui.SetForegroundWindow(hwnd)
+    while True:
+        try:
+            win32gui.ShowWindow(hwnd, win32con.SW_RESTORE)
+            win32gui.SetForegroundWindow(hwnd)
+            break
+        except:
+            pass
     time.sleep(.25)
     
     left=window.left
@@ -35,6 +40,8 @@ def takeSS(capWindow, path):
     except:
         folder=os.path.abspath(sys.argv[0])
         folder=folder.rstrip('alert.py')
+        folder=folder.rstrip('motionSensor.py')
+        folder=folder.rstrip('motionSensor.exe')
         print(folder)
         s.run(['mkdir', folder+'screenShot'], shell=True)
         sS.save(path)
