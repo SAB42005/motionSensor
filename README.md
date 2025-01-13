@@ -2,7 +2,7 @@ DESCRIPTION
 -----------
 -The purpose of this program is to detect motion using the devices webcam and send a screenshot along with the time to the users email.
 
--Movement detected throught the webcam is outlined with green boxes.
+-Movement detected through the webcam is outlined with green boxes.
 
 USAGE
 -----
