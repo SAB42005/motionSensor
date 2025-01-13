@@ -22,4 +22,4 @@ NOTES
 
 -Stable internet connection is required to function properly
 
--Currently unavailable in order to improve security regarding sending alerts through the email address. Use the compiled version instead
+-Currently unavailable in order to improve security regarding sending alerts through the email address. Use the compiled version located in dist instead
