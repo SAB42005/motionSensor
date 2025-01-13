@@ -1,6 +1,6 @@
 DESCRIPTION	
 -----------
--The purpose of this script is to detect motion using the devices webcam and send a screenshot along with the time to the users email.
+-The purpose of this program is to detect motion using the devices webcam and send a screenshot along with the time to the users email.
 
 -Movement detected throught the webcam is outlined with green boxes.
 
@@ -12,9 +12,9 @@ USAGE
 
 -Add the time(in seconds) to the first line in delay.txt, only include numbers, no units, default is 15
 
--Run motionSensor.py to start
+-Run motionSensor.py/exe to start
 
--To stop the script either select the Video Feed window and press 'q' or close the motionSensor window
+-To stop the program either select the Video Feed window and press 'q' or close the motionSensor window
 
 NOTES
 -----
