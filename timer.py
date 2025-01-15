@@ -2,6 +2,7 @@ import time, traceback, datetime, os, pyfiglet as pF
 error=os.path.abspath(r'checks\errorLogs.txt')
 try:
     import pyfiglet as pF, pygetwindow, win32gui, win32con, subprocess as s, sys
+    import msops as m
     timer=0
     delay=os.path.abspath('delay.txt')
     check=os.path.abspath(r'checks\timer.txt')
@@ -20,19 +21,7 @@ try:
     with open(timerCheckTxt, 'w') as file:
         file.write('active')
 
-    hwnd=win32gui.FindWindow(None, windowTitle)
-    if hwnd==0:
-        hwnd=None
-        def windowEnumHandler(handle, context):
-            if windowTitle in win32gui.GetWindowText(handle):
-                global hwnd
-                hwnd=handle
-                return False
-            return True
-        win32gui.EnumWindows(windowEnumHandler, None)
-
-    win32gui.ShowWindow(hwnd, win32con.SW_RESTORE)
-    win32gui.SetForegroundWindow(hwnd)
+    m.bringToFront(windowTitle)
 
     s.run(['start', '/min', timerCheck], shell=True)
 

@@ -1,8 +1,8 @@
-import traceback, datetime, os, atexit
+import traceback, datetime, os
+import msops as m
 error=os.path.abspath(r'checks\errorLogs.txt')
 try:
     import cv2, ctypes, sys, time, subprocess as s, pyfiglet as pF, sys, alert
-    import sSsE as SE
     
     if __name__=='__main__':  
         if not ctypes.windll.shell32.IsUserAnAdmin():
@@ -74,6 +74,6 @@ try:
 except:
     with open(error, 'a') as file:
         file.write(f'Error occured on {datetime.datetime.now()}:\n{traceback.format_exc()}\n')
-    SE.sendEmail(f'Motion sensor error. Check errorLogs.txt for more information: {datetime.datetime.now().strftime("%H:%M:%S")}', None)
+    m.sendEmail(f'Motion sensor error. Check errorLogs.txt for more information: {datetime.datetime.now().strftime("%H:%M:%S")}', None)
     exit(1)
     
