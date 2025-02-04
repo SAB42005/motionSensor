@@ -3,7 +3,7 @@ import msops as m
 error=os.path.abspath(r'checks\errorLogs.txt')
 try:
     import cv2, ctypes, sys, time, subprocess as s, pyfiglet as pF, sys, alert
-    
+
     if __name__=='__main__':  
         if not ctypes.windll.shell32.IsUserAnAdmin():
             banner=pF.figlet_format('Grabbing Permissions...', font='slant')

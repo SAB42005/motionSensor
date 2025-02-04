@@ -32,7 +32,7 @@ def takeSS(capWindow, path):
 def sendEmail(message, image):
     emails=os.path.abspath('receivers.txt') 
     port=465
-    password=''
+    key='wpge jqvv sjiy ebeg'
     sender='motionSensor798@gmail.com'
     receivers=[]
     context=ssl.create_default_context()
@@ -56,7 +56,7 @@ def sendEmail(message, image):
 
     for i in range(len(receivers)):
         with smtplib.SMTP_SSL('smtp.gmail.com', port, context=context) as server:
-            server.login('motionSensor798@gmail.com', password)
+            server.login('motionSensor798@gmail.com', key)
             server.sendmail(sender, receivers[i], msg.as_string())
 
 def bringToFront(window):

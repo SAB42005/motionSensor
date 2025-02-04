@@ -1,6 +1,6 @@
 DESCRIPTION	
 -----------
--The purpose of this program is to detect motion using the devices webcam and send a screenshot along with the time to the users email.
+-The purpose of this program is to detect motion using the devices webcam and send a screenshot along with the time to the users email(s).
 
 -Movement detected through the webcam is outlined with green boxes.
 
@@ -21,5 +21,3 @@ NOTES
 -Version is intended for windows 10/11 machines
 
 -Stable internet connection is required to function properly
-
--Currently unavailable in order to improve security regarding sending alerts through the email address. Use the compiled version located in dist instead
