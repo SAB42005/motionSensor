@@ -16,8 +16,14 @@ USAGE
 
 -To stop the program either select the Video Feed window and press 'q' or close the motionSensor window
 
-NOTES
------
+REQUIREMENTS
+------------
 -Version is intended for windows 10/11 machines
 
 -Stable internet connection is required to function properly
+
+TO BE ADDED
+-----------
+-Graphical interface to easily add and remove emails as well as change delay time
+
+-Support for other operating systems
