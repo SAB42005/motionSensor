@@ -22,6 +22,10 @@ REQUIREMENTS
 
 -Stable internet connection is required to function properly
 
+CURRENT LIMITATIONS
+-------------------
+-The room that the webcam is stationed in must have light or the webcam must come with built-in night vision
+
 TO BE ADDED
 -----------
 -Graphical interface to easily add and remove emails as well as change delay time
