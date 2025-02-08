@@ -10,7 +10,7 @@ USAGE
 
 -Add each receiving email address to a new line in receivers.txt
 
--Add the time(in seconds) to the first line in delay.txt, only include numbers, no units, default is 15
+-Add the time (in seconds) to the first line in delay.txt, only include numbers, no units, default is 15
 
 -Run motionSensor.py/exe to start
 
