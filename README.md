@@ -24,7 +24,7 @@ REQUIREMENTS
 
 CURRENT LIMITATIONS
 -------------------
--The room that the webcam is stationed in must have light or the webcam must come with built-in night vision
+-The room that the webcam is stationed in must have light
 
 TO BE ADDED
 -----------
