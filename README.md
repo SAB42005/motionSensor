@@ -22,9 +22,7 @@ REQUIREMENTS
 
 -Stable internet connection is required to function properly
 
-CURRENT LIMITATIONS
--------------------
--The room that the webcam is stationed in must have light
+-The room that the webcam is stationed in must be illuminated
 
 TO BE ADDED
 -----------
